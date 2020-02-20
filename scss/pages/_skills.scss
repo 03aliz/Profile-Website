@@ -1,0 +1,114 @@
+.skills-text {
+    text-align: center;
+}
+
+.skills-bar-wrapper {
+    
+    .bar {
+        display: block;
+        height: 10px;
+        border: 2px solid black;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+
+    .bar span {
+        height: 10px;
+        float: left;
+        background: black;
+    }
+
+    .HTML-bar {
+        width: 90%;
+        animation-name: html-animate;
+        animation-duration:2s;
+    }
+
+    .JS-bar {
+        width: 90%;
+        animation-name: js-animate;
+        animation-duration: 2s;
+    }
+
+    .react-bar {
+        width: 70%;
+        animation-name: react-animate;
+        animation-duration:2s;
+    }
+
+    .drupal-bar {
+        width: 70%;
+        animation-name:drupal-animate;
+        animation-duration: 2s;
+    }
+
+    .PHP-bar {
+        width: 50%;
+        animation-name: php-animate;
+        animation-duration: 2s;
+    }
+
+    .UI-bar {
+        width:50%;
+        animation-name: ui-animate;
+        animation-duration: 2s;
+    }
+
+    @keyframes html-animate {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 90%;
+        }
+    }
+
+    @keyframes js-animate {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 90%;
+        }
+    }
+    @keyframes react-animate {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 70%;
+        }
+    }
+    @keyframes drupal-animate {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 70%;
+        }
+    }
+    @keyframes php-animate {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 50%;
+        }
+    }
+    @keyframes ui-animate {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 50%;
+        }
+    }
+
+
+}

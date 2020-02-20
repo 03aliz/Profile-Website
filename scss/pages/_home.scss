@@ -1,0 +1,49 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+
+.home-page {
+    margin-top:0;
+}
+
+.home-content {
+    @include flex-space-between;
+}
+
+.intro {
+    margin: 50px 0;
+
+    a {
+    background:    #666666;
+    border-radius: 5px;
+    padding:       8px 20px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal bold 24px/1 "Calibri", sans-serif;
+    text-align:    center;
+    }
+}
+
+.profile-pic {
+
+    width: 50%;
+    margin-bottom: 0px;
+
+    img {
+        border-radius: 100%;
+        width: 90%;
+    }
+}
+
+// media queries
+
+@media screen and (max-width: map-get($breakpoints, "large" )) {
+    .intro {
+        margin: $center-margin;
+    }
+
+    .profile-pic {
+        margin: $center-margin;
+    }
+}

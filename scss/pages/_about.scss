@@ -1,0 +1,117 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the about me page.
+// -
+%icons {
+        background-position: left center;
+        background-repeat: no-repeat;
+        padding-left: 70px;
+        background-size: 50px;
+}
+
+
+
+
+
+.about-content {
+    @include flex-space-between;
+}
+
+.about-img {
+
+    img {
+        width: 400px;
+        margin: 100px 0;
+    }
+}
+
+.about-text {
+    width: 55%;
+}
+
+.about-icons {
+    @include flex-space-between;
+
+    span {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .full-name-text {
+        @extend %icons;
+        background-image: url('./images/user.svg'); 
+    }
+
+    .phone-text {
+        @extend %icons;
+        background-image: url('./images/phone.svg');
+        padding-right: 95px;
+    }
+
+    .email-text {
+        @extend %icons;
+        background-image: url('./images/mail.svg');
+    }
+
+    .github-text {
+        @extend %icons;
+        background-image: url('./images/github.svg');
+    }
+
+}
+
+
+// media queries
+
+@media screen and (max-width: map-get($breakpoints, "large")) {
+
+    .about-img {
+        margin:$center-margin
+    }
+
+    .about-text {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .about-icons {
+        flex-direction: column;
+    
+        .full-name-text {
+            @extend %icons;
+            background-image: url('./images/user.svg');
+            background-position: center top;
+            padding: 50px 0 0 0;
+        }
+    
+        .phone-text {
+            @extend %icons;
+            background-image: url('./images/phone.svg');
+            background-position: center top;
+            padding: 50px 0 0 0;
+        }
+    
+        .email-text {
+            @extend %icons;
+            background-image: url('./images/mail.svg');
+            background-position: center top;
+            padding: 50px 0 0 0;
+        }
+    
+        .github-text {
+            @extend %icons;
+            background-image: url('./images/github.svg');
+            background-position: center top; 
+            padding: 50px 0 0 0;
+        }
+    
+    }
+}
+
+@media screen and (max-width: map-get($breakpoints, "small" )) {
+
+    .about-img {
+        img {
+            width: 280px;
+        }
+    }
+}

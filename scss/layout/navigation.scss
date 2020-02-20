@@ -1,0 +1,88 @@
+
+
+nav {
+    display: flex;
+}
+
+.navigation {      
+    
+    .nav-links {
+        @include flex-space-between;
+        list-style-type: none;
+
+    }
+
+    .nav-links li {
+        width: 0%;
+        margin: 20px 20px 0 20px;
+        font-weight: bold;
+    }
+}
+
+.burger-menu-container {
+
+    display: none;
+    margin-top: 35px;
+
+    div{
+        width: 35px;
+        height: 5px;
+        background: black;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+ 
+}
+
+.change {
+
+     .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+        transform: rotate(-45deg) translate(-8px, 6px);
+    }
+
+    .bar2 {
+        opacity: 0;
+    }
+
+    .bar3 {
+        -webkit-transform: rotate(-45deg) translate(-9px, -8px);
+         transform: rotate(45deg) translate(-9px, -8px);
+    }
+}
+
+.burger-links-container {
+    
+    display: none;
+    text-align: center;
+
+    ul {
+        padding: 0;
+
+    }
+
+    li{
+        margin: 10px 0;
+    }
+
+    
+    
+}  
+
+
+@media screen and (max-width: map-get($breakpoints, "large" )) {
+
+    nav {
+        justify-content: space-between;
+    }
+    .navigation {
+        display: none;
+    }
+    
+
+    .burger-menu-container {
+        display: block;
+    }
+}
+

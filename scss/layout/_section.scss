@@ -1,0 +1,10 @@
+section {
+    margin: 200px 0;
+}
+
+@media screen and (max-width: map-get($breakpoints, "large" )) {
+    section {
+        text-align: center;
+        margin: 100px 0;
+    }
+}
